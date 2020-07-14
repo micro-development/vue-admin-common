@@ -1,0 +1,60 @@
+/**
+  * create on   2019-10-01 01:17
+  * @author     yaimeet
+  */
+@import '../../less/var.less';
+.component-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: -1px -1px 5px 0 rgba(0, 0, 0, .1);
+  //padding: 10px;
+
+  .component-scrollbar{
+    height: calc(100% - 50px);
+    padding: 3px 6px 6px;
+    background: @bg_color;
+  }
+
+  .component-tree {
+    //width: 260px;
+    height: 100%;
+    background: #ffffff;
+    overflow: auto;
+    float: left;
+    border-right: 3px solid #eff3f6;
+    padding: 0px 8px;
+  }
+
+  .component-content {
+    //width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 10px 20px;
+  }
+
+  > div {
+    background: #fff;
+    //height: 100%;
+    //overflow: hidden;
+    //border-radius: 5px;
+    // padding: 10px;
+  }
+
+  .el-scrollbar__wrap {
+    min-height: 100%;
+    //overflow: hidden;
+    background: #fff;
+
+    .el-scrollbar__view {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      padding: 10px;
+    }
+  }
+}
