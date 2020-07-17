@@ -1,6 +1,11 @@
 # ITTLR 管理系统 公共模块
 
-### 全局信息
+## 依赖
+
+- [微开发官方文档](https://docs.microdevelopment.dev/)
+- [it-md shell 脚手架](https://github.com/micro-development/micro-development-sh)
+
+## 全局信息
 
 - 资源 src/assets/
 - 组件 src/components/
@@ -11,7 +16,7 @@
 - 配置 src/config/
 - 用于嵌套路由需要的 `<router-view>` 的容器载体 src/layout/
 
-### 初始化信息
+## 初始化信息
 
 - 上面全局信息的自动引入 src/register.js
 - 导出上面全局信息给其他模块用 src/output.js
