@@ -1,6 +1,6 @@
 # ITTLR 管理系统 公共模块
 
-## 依赖
+## 依赖信息
 
 - [微开发官方文档](https://docs.microdevelopment.dev/)
 - [it-md shell 脚手架](https://github.com/micro-development/micro-development-sh)
