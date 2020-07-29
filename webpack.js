@@ -46,9 +46,9 @@ module.exports = {
     setProxyApi (path) {
         if (process.env.NODE_ENV === 'development') {
             try {
-                this.proxyApi = require(`${path}`)
+                this.proxyApi = require(this.resolve(`${path}`))
             } catch (e) {
-                console.error('setProxyApi catch e', e)
+                console.error('setProxyApi catch e')
             }
         }
         return this
@@ -114,7 +114,7 @@ module.exports = {
                     // console.log('alias star foreach', alias)
                     // console.log('alias star foreach before chain', chain)
                     Object.keys(alias).forEach((aliasPath) => {
-                        chain = chain.set(`${aliasPath}`, `${alias[aliasPath]}`)
+                        chain = chain.set(`${aliasPath}`, this.resolve(`${alias[aliasPath]}`))
                     })
                     // console.log('alias star foreach after chain', chain)
                 }
